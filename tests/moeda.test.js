@@ -137,7 +137,7 @@ describe("Biblioteca de moedas.", () => {
         });
 
         await expect(buscarCotacao("NNN", "BRL")).rejects.toThrow(
-            'Moeda destino não encontrada na resposta API.'
+            'Moeda destino não encontrada na resposta da API.'
         )
     });
 
@@ -149,7 +149,7 @@ describe("Biblioteca de moedas.", () => {
         });
 
         await expect(buscarCotacao("BRL", "BRL")).rejects.toThrow(
-            'Moeda destino não encontrada na resposta API.'
+            'Moeda destino não encontrada na resposta da API.'
         )
     });
 });
